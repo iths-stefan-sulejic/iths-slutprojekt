@@ -1,0 +1,361 @@
+body{
+    margin: 0px;
+    background-color: #daecf8;
+    min-height: 100vh;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #012c6b;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+    background-image: url(/images/book-logo-mobil.png);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px 20px 50px;
+    list-style-type: none;
+}
+
+li a{
+    color: gray;
+    text-decoration: none;
+}
+
+.container-1{
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 450px;
+    grid-template-areas:
+    "background"
+}
+
+.background{
+    grid-area: background;
+    background-image: url(/images/home-background-mobil.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.h1-start{
+    margin: 20px;
+}
+
+.p-start{
+    margin: 0px 50px 0px 50px;
+}
+
+.container-2{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.todays-meal{
+    display: flex;
+    align-items: flex-end;
+    width: 150px;
+    height: 200px;
+    background-image: url(/images/todays-meal-mobil.jpg);
+}
+
+.img-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    height: 50px;
+    width: 100%;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.todays-dessert{
+    display: flex;
+    align-items: flex-end;
+    width: 150px;
+    height: 200px;
+    background-image: url(/images/todays-dessert-mobil.jpg);
+}
+
+footer{
+    margin-top: 55px;
+    height: 70px;
+    width: 100%;
+    background-color: #012c6b;
+}
+
+.container-3{
+    margin: 0px 30px 30px 30px;
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 250px 300px 300px;
+    grid-template-areas:
+    "recipes1 recipes2"
+    "recipes3 recipes4"
+    "recipes5 recipes6"
+}
+
+.recipes1{
+    display: flex;
+    align-items: flex-end;
+    grid-area: recipes1;
+    background-image: url(/images/recipes1-mobil.jpg);
+}
+
+.recipes2{
+    display: flex;
+    align-items: flex-end;
+    grid-area: recipes2;
+    background-image: url(/images/recipes2-mobil.jpg);
+}
+
+.recipes3{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 50px;
+    grid-area: recipes3;
+    background-image: url(/images/recipes3-mobil.jpg);
+}
+
+.recipes4{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 50px;
+    grid-area: recipes4;
+    background-image: url(/images/recipes4-mobil.jpg);
+}
+
+.recipes5{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 50px;
+    grid-area: recipes5;
+    background-image: url(/images/recipes5-mobil.jpg);
+}
+
+.recipes6{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 50px;
+    grid-area: recipes6;
+    background-image: url(/images/recipes6-mobil.jpg);
+}
+
+.container-4{
+    margin: 0px 30px 30px 30px;
+    min-height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 200px;
+    grid-template-areas:
+    "buy1 buy2"
+}
+
+.buy1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    grid-area: buy1;
+    background-image: url(/images/buy1-mobil.jpg);
+}
+
+.buy1-hidden{
+    margin: 0px;
+    width: 100%;
+    max-width: 0;
+    overflow: hidden;
+    height: 50px;
+    white-space: nowrap;
+    background-color: rgba(0,0,0,0.2);
+    transition: max-width 0.6s;
+}
+
+.buy1-hidden-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.buy1:hover .buy1-hidden {
+    max-width: 100%;
+}
+
+.buy2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    grid-area: buy2;
+    background-image: url(/images/buy2-mobil.jpg);
+}
+
+.buy2-hidden{
+    margin: 0px;
+    width: 100%;
+    max-width: 0;
+    overflow: hidden;
+    height: 50px;
+    white-space: nowrap;
+    background-color: rgba(0,0,0,0.2);
+    transition: max-width 0.6s;
+}
+
+.buy2-hidden-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.buy2:hover .buy2-hidden {
+    max-width: 100%;
+}
+
+.flex-buy{
+    display: flex;
+    justify-content: center;
+}
+
+.buy3{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 130px;
+    height: 200px;
+    background-image: url(/images/buy3-mobil.jpg);
+    margin-bottom: 10px;
+}
+
+.buy3-hidden{
+    margin: 0px;
+    width: 100%;
+    max-width: 0;
+    overflow: hidden;
+    height: 50px;
+    white-space: nowrap;
+    background-color: rgba(0,0,0,0.2);
+    transition: max-width 0.6s;
+}
+
+.buy3-hidden-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.buy3:hover .buy3-hidden {
+    max-width: 100%;
+}
+
+.flex-container{
+    margin: 0px 30px 30px 30px;
+    width: 260px;
+    min-height: 60vh;
+    background-color: #012c6b;
+}
+
+.contact-text{
+    display: flex;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+    height: 100px;
+    font-size: 24px;
+    color: white;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px 20px 20px;
+}
+
+.email{
+    margin: 0px 10px 10px 10px;
+    color: white;
+}
+
+.email-text{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+}
+
+.message{
+    margin: 10px 10px 10px 10px;
+    color: white;
+}
+
+.message-text{
+    width: 100%;
+    height: 130px;
+    background-color: white;
+}
+
+@media only screen and (min-device-width: 1024px){
+
+    .top{
+        height: 100px;
+    }
+    
+    .logo{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: white;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 100px 20px 100px;
+        list-style-type: none;
+    }
+    
+    li a{
+        color: gray;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .container-1{
+        min-height: 81vh;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 100%;
+        grid-template-areas:
+        "background"
+    }
+
+    footer{
+        margin-top: 50px;
+        height: 100px;
+    }
+}
