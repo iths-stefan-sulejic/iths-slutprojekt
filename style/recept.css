@@ -5,6 +5,15 @@ body{
     cursor: default;
 }
 
+h1{
+    font-family: 'Crete Round', serif;
+}
+
+p{
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.6;
+}
+
 .top{
     display: flex;
     justify-content: center;
@@ -36,6 +45,7 @@ body{
 li a{
     color: gray;
     text-decoration: none;
+    font-family: 'Oswald', sans-serif;
 }
 
 .container-1{
@@ -68,7 +78,6 @@ li a{
 
 .p-start{
     margin: 0px 50px 0px 50px;
-    line-height: 1.6;
 }
 
 .container-2{
@@ -355,7 +364,7 @@ footer{
     background-color: white;
 }
 
-@media only screen and (min-device-width: 1024px){
+@media screen and (min-width: 1024px){
 
     .top{
         height: 100px;
